@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ligth_gray"
+        tools:context=".pressentation.formlogin.LoginScreen.registrationScreen"
+       >
+
+        <EditText
+            android:id="@+id/edtpasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/white"
+            android:hint="Digite sua senha:"
+            android:inputType="textPassword"
+            android:drawablePadding="5dp"
+            android:maxLines="1"
+            android:padding="15dp"
+            android:drawableStart="@drawable/baseline_password_24"
+            app:layout_constraintTop_toBottomOf="@+id/edtemailLogin"
+            tools:layout_editor_absoluteX="25dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="Login:"
+            android:textSize="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="10dp" />
+
+        <EditText
+            android:id="@+id/edtemailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:layout_marginTop="36dp"
+            android:background="@color/white"
+            android:hint="Digite Seu email:"
+            android:drawableStart="@drawable/baseline_email_242"
+            android:drawablePadding="5dp"
+
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="25dp" />
+
+        <TextView
+            android:id="@+id/tvpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Esqueci a senha"
+            android:textAlignment="textEnd"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtpasswordLogin" />
+
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="344dp"
+            android:layout_marginEnd="40dp"
+            android:backgroundTint="@color/black"
+            android:text="ENTRAR"
+            app:layout_constraintTop_toBottomOf="@+id/edtpasswordLogin"
+            tools:layout_editor_absoluteX="13dp" />
+
+        <Button
+            android:id="@+id/tvregistration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="392dp"
+            android:backgroundTint="@color/black"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:text="CADASTRAR-SE"
+            app:layout_constraintTop_toBottomOf="@+id/edtpasswordLogin"
+            tools:layout_editor_absoluteX="40dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
